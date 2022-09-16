@@ -10,7 +10,7 @@ To install use pip:
 
 For a development installation (requires [Node.js](https://nodejs.org) and [Yarn version 1](https://classic.yarnpkg.com/)),
 
-    $ git clone https://github.com/Alzo.ru/ipytelegram_widget.git
+    $ git clone https://github.com/Alex-vz/ipytelegram_widget.git
     $ cd ipytelegram_widget
     $ pip install -e .
     $ jupyter nbextension install --py --symlink --overwrite --sys-prefix ipytelegram_widget

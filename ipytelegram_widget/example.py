@@ -5,14 +5,14 @@ from ._version import NPM_PACKAGE_RANGE
 # See js/lib/example.js for the frontend counterpart to this file.
 
 @widgets.register
-class HelloWorld(widgets.DOMWidget):
-    """An example widget."""
+class Telegram(widgets.DOMWidget):
+    """An Telegram widget."""
 
     # Name of the widget view class in front-end
-    _view_name = Unicode('HelloView').tag(sync=True)
+    _view_name = Unicode('TelegramView').tag(sync=True)
 
     # Name of the widget model class in front-end
-    _model_name = Unicode('HelloModel').tag(sync=True)
+    _model_name = Unicode('TelegramModel').tag(sync=True)
 
     # Name of the front-end module containing widget view
     _view_module = Unicode('jupyter-telegram').tag(sync=True)
@@ -29,4 +29,4 @@ class HelloWorld(widgets.DOMWidget):
     # Widget properties are defined as traitlets. Any property tagged with `sync=True`
     # is automatically synced to the frontend *any* time it changes in Python.
     # It is synced back to Python from the frontend *any* time the model is touched.
-    value = Unicode('Hello World!').tag(sync=True)
+    value = Unicode('Hello Telegram!').tag(sync=True)

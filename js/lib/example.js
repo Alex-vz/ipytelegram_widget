@@ -19,10 +19,10 @@ var _ = require('lodash');
 
 // When serialiazing the entire widget state for embedding, only values that
 // differ from the defaults will be specified.
-var HelloModel = widgets.DOMWidgetModel.extend({
+var TelegramModel = widgets.DOMWidgetModel.extend({
     defaults: _.extend(widgets.DOMWidgetModel.prototype.defaults(), {
-        _model_name : 'HelloModel',
-        _view_name : 'HelloView',
+        _model_name : 'TelegramModel',
+        _view_name : 'TelegramView',
         _model_module : 'jupyter-telegram',
         _view_module : 'jupyter-telegram',
         _model_module_version : '0.1.0',
@@ -33,7 +33,7 @@ var HelloModel = widgets.DOMWidgetModel.extend({
 
 
 // Custom View. Renders the widget model.
-var HelloView = widgets.DOMWidgetView.extend({
+var TelegramView = widgets.DOMWidgetView.extend({
     // Defines how the widget gets rendered into the DOM
     render: function() {
         this.value_changed();
@@ -50,6 +50,6 @@ var HelloView = widgets.DOMWidgetView.extend({
 
 
 module.exports = {
-    HelloModel: HelloModel,
-    HelloView: HelloView
+    TelegramModel: TelegramModel,
+    TelegramView: TelegramView
 };
